@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Diplomata_SC, Bellefair } from "next/font/google";
+import { Inter, Honk, Oswald } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -9,13 +9,13 @@ const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const diplomata = Diplomata_SC({
-  variable: "--font-diplomata-sc",
+const honk = Honk({
+  variable: "--font-honk",
   subsets: ["latin"],
   weight: ["400"],
 });
 
-const fontHeading = Bellefair({
+const fontHeading = Oswald({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400"],
@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          diplomata.variable,
+          honk.variable,
           inter.className,
           fontHeading.variable,
           "antialiased"

@@ -19,8 +19,8 @@
   .app-padding {
     @apply px-3 py-10 lg:px-0 lg:py-20;
   }
-  .app-heading {
-    @apply text-center font-medium font-heading text-5xl;
+  .heading-text {
+    @apply capitalize font-bold font-heading text-5xl lg:text-[85px];
   }
   .embla {
     will-change: transform;

@@ -1,5 +1,7 @@
 "use client";
 import AppButton from "@/components/common/AppButton/AppButton";
+import LargeText from "./LargeText";
+import SocialMediaIcons from "@/components/common/SocialMediaIcons/SocialMediaIcons";
 
 const Hero = () => {
   return (
@@ -8,18 +10,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/80 bg-center"></div>
       <div className="absolute inset-5 lg:inset-0 flex flex-col items-center justify-center space-y-10">
         <div className="flex flex-col items-center space-y-10">
-          <div className="text-center lg:text-start -space-y-1 lg:-space-y-12">
-            <h1 className="uppercase text-white text-[40px] lg:text-[180px] font-custom">
-              sanjeed
-            </h1>
-            <p className="flex items-center justify-around text-white w-full text-lg lg:text-2xl uppercase font-thin">
-              i make designs and develop websites for people and help them to
-              grow their business.
-            </p>
+          <div className="h-24 lg:h-[450px]">
+            <LargeText />
           </div>
+          <SocialMediaIcons />
           <AppButton name="Talk to me" href="" style="normal-btn" />
         </div>
-        {/* <SocialMediaIcons /> */}
       </div>
 
       <div className="absolute right-10 bottom-10 flex flex-col -space-y-2 items-center text-white">

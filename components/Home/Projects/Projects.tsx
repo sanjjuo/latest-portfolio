@@ -6,7 +6,7 @@ import { projectsData } from "./data";
 const Projects = () => {
   return (
     <div className="bg-app-projectBg rounded-2xl p-10 space-y-10">
-      <h1 className="text-white text-2xl capitalize font-medium">
+      <h1 className="text-white text-2xl capitalize font-medium font-heading">
         Featured work
       </h1>
       <div className="flex items-center justify-between">
@@ -27,13 +27,10 @@ const Projects = () => {
         <div className="max-h-[1000px] overflow-y-auto scrollbar-hide space-y-5 cursor-pointer">
           {projectsData.map((data) => (
             <div key={data.id} className="relative w-[700px] h-96">
-              <Image
+              <img
                 src={data.image}
-                fill
-                priority
-                quality={100}
                 alt={data.title}
-                className="object-cover rounded-2xl"
+                className="object-cover rounded-2xl w-full h-full"
               />
             </div>
           ))}

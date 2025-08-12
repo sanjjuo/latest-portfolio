@@ -1,3 +1,5 @@
+"use client";
+import { useIsScrolledHook } from "@/components/hooks/isScrolledHook";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -13,14 +15,17 @@ const AppButton = ({
   href: string;
   style: string;
 }) => {
+  const { isScrolled } = useIsScrolledHook();
   return (
     <Link href={href}>
       <Button
         className={cn(
           style === "services-btn"
-            ? "bg-transparent hover:bg-transparent"
-            : "bg-white hover:bg-white",
-          "text-app-text rounded-full w-auto h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-1000 shadow-none"
+            ? "bg-transparent hover:bg-transparent text-app-text"
+            : style === "navbar-btn" && isScrolled
+            ? "bg-app-text text-white"
+            : "bg-white hover:bg-white text-app-text",
+          " rounded-full w-auto font-heading h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-1000 shadow-none"
         )}
       >
         {name} <ArrowRight className="-rotate-45 !w-4 !h-4" />

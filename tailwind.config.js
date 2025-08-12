@@ -12,7 +12,7 @@ module.exports = {
         transform: "transform",
       },
       fontFamily: {
-        custom: ["var(--font-diplomata-sc)", "sans-serif"],
+        custom: ["var(--font-honk)", "sans-serif"],
         heading: ["var(--font-heading)", "sans-serif"],
       },
       borderRadius: {
