@@ -1,0 +1,36 @@
+/* imports */
+@import "./styles/variables.css";
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-app-background text-app-text;
+  }
+  .app-width {
+    @apply max-w-[1800px] mx-auto;
+  }
+  .app-padding {
+    @apply px-3 py-10 lg:px-0 lg:py-20;
+  }
+  .app-heading {
+    @apply text-center font-medium font-heading text-5xl;
+  }
+  .embla {
+    will-change: transform;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
