@@ -1,5 +1,5 @@
 "use client";
-import AppButton from "@/components/common/AppButton/TalktoMeBtn";
+import AppButton from "@/components/common/AppButton/AppButton";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
               grow their business.
             </p>
           </div>
-          <AppButton />
+          <AppButton name="Talk to me" href="" style="normal-btn" />
         </div>
         {/* <SocialMediaIcons /> */}
       </div>

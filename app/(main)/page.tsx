@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <div className="app-width app-padding">
+      <div className="app-width">
         <WorkSlider />
         <AboutMe />
         <Projects />

@@ -1,4 +1,4 @@
-import AppButton from "../common/AppButton/TalktoMeBtn";
+import AppButton from "../common/AppButton/AppButton";
 import MobileSidebar from "./MobileSidebar";
 import NavLinks from "./NavLinks";
 
@@ -10,7 +10,7 @@ const Navbar = () => {
         <NavLinks />
       </div>
       <div className="hidden lg:block">
-        <AppButton name="Talk to me"  />
+        <AppButton name="Talk to me" href="" style="normal-btn" />
       </div>
       <div className="lg:hidden">
         <MobileSidebar />

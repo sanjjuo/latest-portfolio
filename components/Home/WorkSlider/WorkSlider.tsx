@@ -11,8 +11,10 @@ import Link from "next/link";
 
 const WorkSlider = () => {
   return (
-    <section className="space-y-20">
-      <h1 className="app-heading">I'm worked with</h1>
+    <section className="flex flex-col lg:flex-row items-center gap-5 app-padding">
+      <h1 className="text-2xl lg:text-base font-bold lg:font-medium">
+        I'm worked with
+      </h1>
       <Carousel
         opts={{
           loop: true,
@@ -23,12 +25,13 @@ const WorkSlider = () => {
             stopOnInteraction: false,
           }),
         ]}
+        className="lg:flex-1"
       >
         <CarouselContent>
           {workSliderData.map((data) => (
             <CarouselItem
               key={data.id}
-              className="flex justify-center basis-1/3"
+              className="flex justify-center basis-full lg:basis-1/3"
             >
               <Link
                 href=""

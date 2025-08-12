@@ -1,14 +1,12 @@
-import React from "react";
-import { projectsData } from "./data";
+import AppButton from "@/components/common/AppButton/AppButton";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { projectsData } from "./data";
 
 const Projects = () => {
   return (
     <div className="bg-app-projectBg rounded-2xl p-10 space-y-10">
-      <h1 className="text-white text-2xl capitalize font-bold">
+      <h1 className="text-white text-2xl capitalize font-medium">
         Featured work
       </h1>
       <div className="flex items-center justify-between">
@@ -16,9 +14,9 @@ const Projects = () => {
           <ul className="">
             {projectsData.map((data) => (
               <Link href="" key={data.id}>
-                <li className="text-white text-7xl flex items-center gap-2 font-bold hover:transition-all transform hover:translate-x-5 duration-200 ease-in mb-5">
+                <li className="text-white text-7xl flex items-center gap-2 font-bold hover:transition-all transform hover:translate-x-5 duration-200 ease-in mb-10">
                   <span>{data.title}</span>
-                  <span className="text-lg font-normal">
+                  <span className="text-base font-light">
                     [{data.timeframe}]
                   </span>
                 </li>
@@ -41,11 +39,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <Link href="">
-        <Button className="bg-white text-app-text rounded-full w-auto h-12 text-[16px] capitalize hover:bg-white gap-1 hover:rounded-xl transition-transform ease-in duration-700">
-          Explore more work <ArrowRight className="-rotate-45 !w-4 !h-4" />
-        </Button>
-      </Link>
+      <AppButton name="Explore my works" href="" style="normal-btn" />
     </div>
   );
 };
