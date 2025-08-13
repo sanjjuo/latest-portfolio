@@ -22,10 +22,10 @@ const AppButton = ({
         className={cn(
           style === "services-btn"
             ? "bg-transparent hover:bg-transparent text-app-text"
-            : style === "navbar-btn" && isScrolled
-            ? "bg-white text-app-text"
-            : "bg-app-projectBg hover:bg-app-projectBg text-white",
-          " rounded-full w-auto font-heading h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-300 shadow-none"
+            : (style === "navbar-btn" || style === "project-btn") && isScrolled
+            ? "bg-white text-app-text hover:bg-white"
+            : "bg-app-projectBg text-white hover:bg-app-projectBg",
+          "rounded-full w-auto font-heading h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-300 shadow-none"
         )}
       >
         {name} <ArrowRight className="-rotate-45 !w-4 !h-4" />

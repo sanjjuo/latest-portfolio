@@ -9,7 +9,7 @@ const ConnectMe = () => {
       <h1 className="text-3xl font-semibold text-white font-heading">
         Connect with me
       </h1>
-      <div className="flex items-center justify-between rounded-full pl-5 py-2 pr-2 bg-app-inputBg h-16 w-[600px]">
+      <div className="flex items-center justify-between rounded-full pl-5 py-2 pr-2 bg-app-inputBg h-16 lg:w-[600px]">
         <Input
           placeholder="Your Email Address"
           className="border-none shadow-none focus:!ring-0 placeholder:text-2xl placeholder:font-bold h-full flex items-center !text-2xl text-white"

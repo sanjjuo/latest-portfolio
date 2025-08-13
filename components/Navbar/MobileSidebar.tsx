@@ -14,7 +14,7 @@ const MobileSidebar = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <MenuIcon className="w-10 h-10 fill-white" />
+        <MenuIcon className="w-10 h-10 fill-app-projectBg" />
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>

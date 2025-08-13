@@ -15,7 +15,7 @@ const Hero = () => {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        hour12: false,
+        hour12: true,
       });
       setTime(dubaiTime);
     };
@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="relative flex flex-col items-center justify-center h-[calc(100vh-10rem)] lg:h-[calc(100vh-2rem)] overflow-hidden rounded-2xl">
       <div>
         <div className="flex items-end gap-5">
-          <div className="max-w-[150px] text-right">
+          <div className="hidden lg:block max-w-[150px] text-right">
             <SmallText text="I am Indian frontend developer based in Dubai, UAE" />
           </div>
           <div className="h-24 lg:h-[280px] max-w-full">
@@ -40,23 +40,22 @@ const Hero = () => {
           <div className="h-24 lg:h-[300px] max-w-full">
             <LargeText text="DEVELOPER" />
           </div>
-          <div className="max-w-[170px] text-left">
+          <div className="hidden lg:block max-w-[170px] text-left">
             <SmallText text="I create designs and build web experiences that bring ideas to life." />
           </div>
         </div>
-        <div className="flex items-end justify-between w-full mt-20">
+        <div className="flex flex-col lg:flex-row items-end justify-between w-full mt-20">
           <p className="font-heading">Dubai, UAE {time}</p>
           <p className="text-5xl font-heading font-extrabold">
             - Mohamed Sanjeed
           </p>
         </div>
       </div>
-
       <div className="absolute bottom-5 left-10 right-10 flex items-end justify-between">
         <div>
           <SocialMediaIcons />
         </div>
-        <div>
+        <div className="hidden lg:block">
           <Location />
         </div>
       </div>

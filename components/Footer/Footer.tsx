@@ -13,8 +13,8 @@ const Footer = () => {
         <Links data={footerLinks[1]} />
         <Links data={footerLinks[2]} />
       </div>
-      <div className="flex items-center justify-center">
-        <span className="name-title text-[350px] uppercase text-white">
+      <div className="flex items-center justify-center py-10 lg:py-5">
+        <span className="name-title text-7xl lg:text-[350px] uppercase text-white">
           mohamed sanjeed
         </span>
       </div>
@@ -22,7 +22,9 @@ const Footer = () => {
         <span className="text-white text-sm">
           &copy; copyright @{new Date().getFullYear()}
         </span>
-        <span className="text-white text-sm capitalize">website MadeBySanjeed</span>
+        <span className="text-white text-sm capitalize">
+          website MadeBySanjeed
+        </span>
       </div>
     </div>
   );
