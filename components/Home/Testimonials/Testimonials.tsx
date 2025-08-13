@@ -7,7 +7,7 @@ const Testimonials = () => {
       <h1 className="text-center font-heading text-5xl capitalize">
         what client says
       </h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center mt-20">
+      <div className="flex items-center justify-center mt-10">
         <TestimonialCards />
       </div>
     </div>

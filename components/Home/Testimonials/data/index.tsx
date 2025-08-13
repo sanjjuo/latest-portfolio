@@ -1,49 +1,65 @@
-import DeveloperIcon from "@/components/svg/DeveloperIcon";
-
 export const testimonialData = [
   {
     id: 1,
     client: "Abdallah Abu Sidu",
-    comments:
-      "We’re dedicated to creating the industry narrative that others follow 3 years from now. We paved the path for creative SEO, multi-channel search with Digital PR, and Social Search and we will continue to do it. We’re on a mission to be the first search-first agency to win a Cannes Lion disrupting the status quo.",
+    avatar:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHE_iuBnfhpXw/profile-displayphoto-scale_200_200/B4DZhVkUE8HYAk-/0/1753782241908?e=2147483647&v=beta&t=oNAkAclNkE7rhZQ1NkVJFNGKtQubIdRYOlSy9BqhBoM",
+    location: "Dubai, UAE",
     role: "Senior Frontend Developer",
     company: "Eunx",
-    icon: <DeveloperIcon />,
+    companyLogo: "/images/logos/eunx.png",
+    comments:
+      "We’re dedicated to creating the industry narrative that others follow 3 years from now. We paved the path for creative SEO, multi-channel search with Digital PR, and Social Search and we will continue to do it. We’re on a mission to be the first search-first agency to win a Cannes Lion disrupting the status quo.",
+    rating: 5,
+    date: "2025-07-10",
+    project: "Corporate Website Redesign",
+    category: "Frontend Development",
+    linkedin: "https://linkedin.com/in/abdallah-abu-sidu",
+    website: "https://eunx.com",
+    highlight: true,
+    themeColor: "#4F46E5",
+    badge: "Featured",
   },
   {
     id: 2,
-    client: "Sara Al Mansoori",
-    comments:
-      "Working with this team has been a game-changer. Their ability to adapt quickly to industry shifts while maintaining high-quality delivery is unmatched.",
+    client: "Antonella",
+    avatar:
+      "https://wwd.com/wp-content/uploads/2023/06/GettyImages-1471687861-e1686581007568.jpg?w=1000&h=550&crop=1",
+    location: "Abu Dhabi, UAE",
     role: "UI/UX Designer",
-    company: "BrightPixel",
-    icon: <DeveloperIcon />,
+    company: "CreativeFlow",
+    companyLogo: "/images/logos/creativeflow.png",
+    comments:
+      "Working with this team was an absolute pleasure. They understood our brand vision perfectly and delivered designs that exceeded our expectations.",
+    rating: 4.8,
+    date: "2025-05-22",
+    project: "Mobile App Design",
+    category: "UI/UX",
+    linkedin: "https://linkedin.com/in/sara-al-mansoori",
+    website: "https://creativeflow.design",
+    highlight: false,
+    themeColor: "#F59E0B",
+    badge: "Top Designer",
   },
   {
     id: 3,
-    client: "James Whitmore",
+    client: "Talal qasim",
+    avatar:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFtoLu15qAm9A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715936535463?e=2147483647&v=beta&t=7IGdckf0Pc2MJM0Ac7sBF0wDdnqm05ESAutwkj9EOes",
+    location: "Sharjah, UAE",
+    role: "Digital Marketing Strategist",
+    company: "AdVision",
+    companyLogo: "/images/logos/advision.png",
     comments:
-      "They consistently deliver creative solutions that go beyond expectations. Our product visibility and engagement skyrocketed after their involvement.",
-    role: "Product Manager",
-    company: "NextWave Solutions",
-    icon: <DeveloperIcon />,
-  },
-  {
-    id: 4,
-    client: "Leila Hassan",
-    comments:
-      "Their technical expertise and collaborative approach made the entire process smooth. We achieved our milestones ahead of schedule without sacrificing quality.",
-    role: "Backend Engineer",
-    company: "CloudEdge",
-    icon: <DeveloperIcon />,
-  },
-  {
-    id: 5,
-    client: "Omar Khalid",
-    comments:
-      "From concept to launch, their dedication to excellence was evident. They brought fresh ideas that reshaped how we approach development.",
-    role: "Full Stack Developer",
-    company: "Innovatech",
-    icon: <DeveloperIcon />,
+      "Their creative campaigns and SEO expertise brought us a 200% increase in organic traffic within just 3 months.",
+    rating: 4.9,
+    date: "2025-06-14",
+    project: "SEO & Digital Marketing",
+    category: "Marketing",
+    linkedin: "https://linkedin.com/in/mohammed-khalid",
+    website: "https://advision.ae",
+    highlight: false,
+    themeColor: "#10B981",
+    badge: "Growth Partner",
   },
 ];
