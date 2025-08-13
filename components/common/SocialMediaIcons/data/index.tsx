@@ -1,23 +1,20 @@
-import { Instagram, Facebook, Twitter, Github, Linkedin } from "lucide-react";
+import Github from "@/components/svg/Github";
+import Instagram from "@/components/svg/Instagram";
+import Linkedin from "@/components/svg/Linkedin";
+import Whatsapp from "@/components/svg/Whatsapp";
 
 export const socialMediaIconData = [
   {
     id: 1,
     label: "instagram",
     href: "https://instagram.com/",
-    icon: <Instagram className="w-4 h-4 stroke-app-text" />,
+    icon: <Instagram className="w-[16px] h-[16px] stroke-app-text" />,
   },
   {
     id: 2,
-    label: "facebook",
-    href: "https://facebook.com/",
-    icon: <Facebook className="w-4 h-4 stroke-app-text" />,
-  },
-  {
-    id: 3,
-    label: "twitter",
-    href: "https://twitter.com/",
-    icon: <Twitter className="w-4 h-4 stroke-app-text" />,
+    label: "whatsapp",
+    href: "https://whatsapp.com/",
+    icon: <Whatsapp className="w-4 h-4 stroke-app-text" />,
   },
   {
     id: 4,
