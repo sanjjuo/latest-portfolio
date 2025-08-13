@@ -7,18 +7,16 @@ import { cn } from "@/lib/utils";
 const NavLinks = () => {
   const { isScrolled } = useIsScrolledHook();
   return (
-    <ul className="flex items-center gap-10">
+    <ul className="flex items-center gap-5">
       {navLinkData.map((item) => (
         <Link href={item.href} key={item.id}>
           <li
             className={cn(
-              isScrolled
-                ? "text-app-text font-light"
-                : "text-white font-extralight",
+              isScrolled ? "text-white font-light" : "text-app-text font-light",
               "text-sm tracking-wide  capitalize"
             )}
           >
-            {item.label}
+            [{item.label}]
           </li>
         </Link>
       ))}

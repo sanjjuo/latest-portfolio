@@ -23,9 +23,9 @@ const AppButton = ({
           style === "services-btn"
             ? "bg-transparent hover:bg-transparent text-app-text"
             : style === "navbar-btn" && isScrolled
-            ? "bg-app-text text-white"
-            : "bg-white hover:bg-white text-app-text",
-          " rounded-full w-auto font-heading h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-1000 shadow-none"
+            ? "bg-white text-app-text"
+            : "bg-app-projectBg hover:bg-app-projectBg text-white",
+          " rounded-full w-auto font-heading h-11 text-[15px] capitalize gap-1 hover:rounded-xl transition ease-in duration-300 shadow-none"
         )}
       >
         {name} <ArrowRight className="-rotate-45 !w-4 !h-4" />

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SocialMediaIcons = () => {
   return (
-    <ul className="flex items-center gap-5 lg:gap-10">
+    <ul className="flex items-center gap-5">
       {socialMediaIconData.map((item) => (
         <Link href={item.href} key={item.id}>
           <li className="bg-white rounded-full p-2">{item.icon}</li>

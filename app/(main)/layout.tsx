@@ -10,7 +10,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     <>
       <div
         className={cn(
-          isScrolled ? "bg-white w-full" : "bg-transparent",
+          isScrolled ? "bg-app-projectBg w-full" : "bg-transparent",
           "sticky top-0 w-full z-50 transition transform duration-300 ease-in-out"
         )}
       >

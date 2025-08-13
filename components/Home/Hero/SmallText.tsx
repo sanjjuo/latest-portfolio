@@ -1,8 +1,7 @@
-"use client";
 import DecryptedText from "@/components/React-bits/DecryptedText/DecryptedText";
 import React from "react";
 
-const LargeText = ({ text }: { text: string }) => {
+const SmallText = ({ text }: { text: string }) => {
   return (
     <DecryptedText
       text={text}
@@ -10,10 +9,10 @@ const LargeText = ({ text }: { text: string }) => {
       revealDirection="center"
       speed={100}
       maxIterations={30}
-      className="text-app-text text-[100px] lg:text-[300px] name-title z-50"
-      encryptedClassName="text-app-text text-[100px] lg:text-[300px] name-title z-50"
+      className="text-app-text text-base lg:text-lg font-heading"
+      encryptedClassName="text-app-text text-base lg:text-lg font-heading"
     />
   );
 };
 
-export default LargeText;
+export default SmallText;

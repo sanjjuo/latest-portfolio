@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between h-20 app-width px-5">
       <p
         className={cn(
-          isScrolled ? "text-app-text" : "text-white",
+          isScrolled ? "text-white" : "text-app-text",
           "font-extrabold text-3xl font-heading"
         )}
       >

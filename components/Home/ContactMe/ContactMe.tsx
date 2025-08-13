@@ -11,7 +11,7 @@ const ContactMe = () => {
         <Link href="" className="flex items-center gap-1 ">
           <span
             key="contact-line"
-            className="text-6xl lg:text-[200px] text-app-text"
+            className="text-6xl lg:text-[200px] text-app-text font-heading"
           >
             Contact Me
           </span>

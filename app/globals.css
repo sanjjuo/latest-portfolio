@@ -6,12 +6,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "T1Korium";
+  src: url("/fonts/T1Korium-2Kg-BF65f3bd011a7a4.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-app-background text-app-text;
+  }
+  .name-title {
+    font-family: "T1Korium", sans-serif;
   }
   .app-width {
     @apply max-w-[1800px] mx-auto;
