@@ -5,7 +5,7 @@ const TestimonialCards = () => {
   return (
     <>
       {testimonialData.map((item) => (
-        <Card key={item.id} className="w-[450px] p-10 rotate-6">
+        <Card key={item.id} className="lg:w-[450px] p-10 rotate-6">
           <CardContent className="p-0">
             <div className="flex flex-col items-center justify-center">
               <div className="w-20 h-20">{item.icon}</div>

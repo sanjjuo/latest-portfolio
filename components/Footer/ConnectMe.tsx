@@ -21,7 +21,7 @@ const ConnectMe = () => {
           />
         </span>
       </div>
-      <SocialMediaIcons />
+      <SocialMediaIcons placement="footer-section" />
     </div>
   );
 };

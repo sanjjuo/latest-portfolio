@@ -1,14 +1,15 @@
-import React from "react";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import NavLinks from "./NavLinks";
+import Logo from "../common/Logo/Logo";
 import MenuIcon from "../svg/MenuIcon";
+import NavLinks from "./NavLinks";
+import SocialMediaIcons from "../common/SocialMediaIcons/SocialMediaIcons";
+import Link from "next/link";
 
 const MobileSidebar = () => {
   return (
@@ -18,14 +19,23 @@ const MobileSidebar = () => {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </SheetDescription>
+          <SheetTitle className="flex items-start">
+            <Logo />
+          </SheetTitle>
         </SheetHeader>
-        <div>
+        <div className="mt-20 space-y-10">
           <NavLinks />
+          <div>
+            <h1 className="uppercase font-extrabold text-xs">
+              let's create together
+            </h1>
+            <Link href="mailto:sanjeedofficial22@gmail.com">
+              <p className="text-2xl font-heading">
+                sanjeedofficial22@gmail.com
+              </p>
+            </Link>
+          </div>
+          <SocialMediaIcons placement="mobile-sidebar" />
         </div>
       </SheetContent>
     </Sheet>
