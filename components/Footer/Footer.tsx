@@ -1,0 +1,31 @@
+import ConnectMe from "./ConnectMe";
+import Links from "./Links";
+import { footerLinks } from "./data";
+
+const Footer = () => {
+  return (
+    <div className="bg-app-projectBg rounded-2xl p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+        <div className="col-span-2">
+          <ConnectMe />
+        </div>
+        <Links data={footerLinks[0]} />
+        <Links data={footerLinks[1]} />
+        <Links data={footerLinks[2]} />
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="name-title text-[350px] uppercase text-white">
+          mohamed sanjeed
+        </span>
+      </div>
+      <div className="flex items-center justify-between">
+        <span className="text-white text-sm">
+          &copy; copyright @{new Date().getFullYear()}
+        </span>
+        <span className="text-white text-sm capitalize">website MadeBySanjeed</span>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

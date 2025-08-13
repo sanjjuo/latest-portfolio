@@ -25,6 +25,7 @@ module.exports = {
           background: "#EFEEEC",
           text: "#000000",
           projectBg: "#111212",
+          inputBg:"#282828"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

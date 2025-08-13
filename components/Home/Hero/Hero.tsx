@@ -26,17 +26,17 @@ const Hero = () => {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
   return (
-    <div className="relative flex flex-col items-center justify-center space-y-10 h-[calc(100vh-10rem)] lg:h-[calc(100vh-2rem)] overflow-hidden rounded-2xl">
-      <div className="space-y-10">
+    <div className="relative flex flex-col items-center justify-center h-[calc(100vh-10rem)] lg:h-[calc(100vh-2rem)] overflow-hidden rounded-2xl">
+      <div>
         <div className="flex items-end gap-5">
           <div className="max-w-[150px] text-right">
             <SmallText text="I am Indian frontend developer based in Dubai, UAE" />
           </div>
-          <div className="h-24 lg:h-[200px] max-w-full">
+          <div className="h-24 lg:h-[280px] max-w-full">
             <LargeText text="FRONTEND" />
           </div>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-end gap-5">
           <div className="h-24 lg:h-[300px] max-w-full">
             <LargeText text="DEVELOPER" />
           </div>
@@ -44,7 +44,7 @@ const Hero = () => {
             <SmallText text="I create designs and build web experiences that bring ideas to life." />
           </div>
         </div>
-        <div className="flex items-end justify-between w-full">
+        <div className="flex items-end justify-between w-full mt-20">
           <p className="font-heading">Dubai, UAE {time}</p>
           <p className="text-5xl font-heading font-extrabold">
             - Mohamed Sanjeed
@@ -52,11 +52,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-5 right-10 flex items-end justify-between w-full">
-        <div className="w-full">
+      <div className="absolute bottom-5 left-10 right-10 flex items-end justify-between">
+        <div>
           <SocialMediaIcons />
         </div>
-        <div className="w-full">
+        <div>
           <Location />
         </div>
       </div>

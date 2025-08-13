@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer/Footer";
 import { useIsScrolledHook } from "@/components/hooks/isScrolledHook";
 import Navbar from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
@@ -17,6 +18,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
       </div>
       <div className="-mt-20 p-2">{children}</div>
+      <Footer />
     </>
   );
 };
