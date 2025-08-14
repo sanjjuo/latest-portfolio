@@ -17,7 +17,7 @@ const ConnectMe = () => {
         <span className="bg-[#B2F6E3] p-3 rounded-full flex items-center justify-center cursor-pointer duration-200 transition ease-in-out">
           <ArrowRight
             strokeWidth={1.5}
-            className="w-7 h-7 -rotate-45 hover:rotate-45"
+            className="w-7 h-7 transition transform duration-300 ease-in-out -rotate-45 hover:rotate-45"
           />
         </span>
       </div>

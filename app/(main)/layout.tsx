@@ -17,8 +17,10 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
       >
         <Navbar />
       </div>
-      <div className="-mt-20 p-2">{children}</div>
-      <Footer />
+      <div className="p-2">
+        <div className="-mt-20">{children}</div>
+        <Footer />
+      </div>
     </>
   );
 };

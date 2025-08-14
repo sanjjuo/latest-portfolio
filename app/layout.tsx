@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Honk, Oswald } from "next/font/google";
+import { Raleway, Honk, Oswald } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({
-  variable: "--font-outfit",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={cn(
           honk.variable,
-          inter.className,
+          raleway.className,
           fontHeading.variable,
           "antialiased"
         )}

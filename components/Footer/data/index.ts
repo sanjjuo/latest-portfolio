@@ -36,7 +36,7 @@ export const footerLinks: FooterLinksType = [
       {
         id: 3,
         label: "Location",
-        value: "Al Mutheena, Deira, Dubai, UAE",
+        value: "Dubai, UAE",
         href: "https://goo.gl/maps/your-location-link",
       },
     ],

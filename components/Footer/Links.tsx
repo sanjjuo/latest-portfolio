@@ -16,12 +16,18 @@ const Links: React.FC<LinksProps> = ({ data }) => {
         {data.links.map((link) => (
           <li key={link.id}>
             {link.name ? (
-              <Link href={link.href} className="text-white">
+              <Link
+                href={link.href}
+                className="text-white inline-block transition-transform ease-in-out duration-300 hover:scale-105"
+              >
                 {link.name}
               </Link>
             ) : (
               <Link href={link.href} className="text-white">
-                {link.label}: {link.value}
+                <span className="font-bold text-sm">{link.label}</span> :{" "}
+                <span className="inline-block transition-transform ease-in-out duration-300 hover:scale-105">
+                  {link.value}
+                </span>
               </Link>
             )}
           </li>

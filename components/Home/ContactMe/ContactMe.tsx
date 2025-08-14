@@ -11,14 +11,14 @@ const ContactMe = () => {
         <Link href="" className="flex items-center gap-1 ">
           <span
             key="contact-line"
-            className="text-6xl lg:text-[200px] text-app-text font-heading"
+            className="text-6xl lg:text-[150px] text-app-text font-heading"
           >
             Contact Me
           </span>
           <img
             src="/images/contact.jpg"
             alt="star"
-            className="w-20 h-20 lg:w-60 lg:h-60 rounded-full object-cover mx-10 lg:mx-20"
+            className="w-20 h-20 lg:w-40 lg:h-40 rounded-full object-cover mx-10"
           />
         </Link>,
       ]}
