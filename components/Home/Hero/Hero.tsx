@@ -1,29 +1,25 @@
 "use client";
 import SocialMediaIcons from "@/components/common/SocialMediaIcons/SocialMediaIcons";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import LargeText from "./LargeText";
 import Location from "./Location";
 import SmallText from "./SmallText";
-import React from "react";
+import { useDubaiTime } from "./hooks/useDubaiTime";
 
 const Hero = () => {
-  const [time, setTime] = React.useState("");
-
-  React.useEffect(() => {
-    const updateTime = () => {
-      const dubaiTime = new Date().toLocaleTimeString("en-US", {
-        timeZone: "Asia/Dubai",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: true,
-      });
-      setTime(dubaiTime);
-    };
-
-    updateTime(); // set initial time
-    const interval = setInterval(updateTime, 1000); // update every second
-
-    return () => clearInterval(interval); // cleanup on unmount
+  const { time } = useDubaiTime();
+  useGSAP(() => {
+    gsap.from("#dubai-time", {
+      xPercent: -100,
+      duration: 2.7,
+      ease: "expo.out",
+    });
+    gsap.from("#my-name", {
+      xPercent: 100,
+      duration: 2.7,
+      ease: "expo.out",
+    });
   }, []);
   return (
     <div className="relative flex flex-col items-center justify-center h-[calc(100vh-10rem)] lg:h-[calc(100vh-2rem)] overflow-hidden rounded-2xl">
@@ -45,8 +41,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-end justify-between w-full mt-20">
-          <p className="font-heading">Dubai, UAE {time}</p>
-          <p className="text-5xl font-heading font-extrabold">
+          <p id="dubai-time" className="font-heading">
+            Dubai, UAE {time}
+          </p>
+          <p id="my-name" className="text-5xl font-heading font-extrabold">
             - Mohamed Sanjeed
           </p>
         </div>
