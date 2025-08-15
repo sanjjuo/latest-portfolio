@@ -2,7 +2,7 @@ export const navLinkData = [
   {
     id: 1,
     href: "/",
-    label: "welcome",
+    label: "home",
   },
   {
     id: 2,

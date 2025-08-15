@@ -16,11 +16,12 @@ const NavLinks = () => {
           <li
             className={cn(
               isScrolled ? "text-white font-light" : "text-app-text font-light",
-              pathName === item.href && "font-bold",
-              "text-4xl lg:text-sm tracking-wide  capitalize"
+              pathName === item.href &&
+                "font-bold underline underline-offset-2",
+              "text-4xl lg:text-base tracking-wide capitalize font-heading"
             )}
           >
-            [{item.label}]
+            {item.label}
           </li>
         </Link>
       ))}

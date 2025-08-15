@@ -17,7 +17,6 @@ export const testimonialData = [
     linkedin: "https://linkedin.com/in/abdallah-abu-sidu",
     website: "https://eunx.com",
     highlight: true,
-    themeColor: "#4F46E5",
     badge: "Featured",
   },
   {
@@ -38,7 +37,6 @@ export const testimonialData = [
     linkedin: "https://linkedin.com/in/sara-al-mansoori",
     website: "https://creativeflow.design",
     highlight: false,
-    themeColor: "#F59E0B",
     badge: "Top Designer",
   },
   {
@@ -59,7 +57,6 @@ export const testimonialData = [
     linkedin: "https://linkedin.com/in/mohammed-khalid",
     website: "https://advision.ae",
     highlight: false,
-    themeColor: "#10B981",
     badge: "Growth Partner",
   },
 ];

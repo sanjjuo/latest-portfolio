@@ -7,7 +7,7 @@ import { servicesData } from "./data";
 const OurServices = () => {
   return (
     <section className="app-padding space-y-10">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-20 h-[500px]">
         {/* header part */}
         <div className="lg:col-span-2 flex flex-col items-center justify-center lg:space-y-10">
           <h1 className="heading-text lg:text-[155px]">my services</h1>

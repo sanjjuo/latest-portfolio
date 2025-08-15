@@ -5,6 +5,7 @@ import "swiper/css";
 import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialData } from "./data";
+import Link from "next/link";
 
 const TestimonialCards = () => {
   return (
@@ -24,21 +25,9 @@ const TestimonialCards = () => {
     >
       {testimonialData.map((item) => (
         <SwiperSlide key={item.id}>
-          <Card
-            className="p-10 w-auto relative border-t-4 overflow-hidden"
-            style={{ borderColor: item.themeColor || "#4F46E5" }}
-          >
+          <Card className="p-10 w-auto relative overflow-hidden rounded-none">
             <CardContent>
               <div className="flex flex-col items-center">
-                {item.badge && (
-                  <span
-                    className="absolute top-3 right-3 text-xs font-semibold px-3 py-1 rounded-full text-white"
-                    style={{ backgroundColor: item.themeColor || "#4F46E5" }}
-                  >
-                    {item.badge}
-                  </span>
-                )}
-
                 <Image
                   src={item.avatar}
                   alt={item.client}
@@ -88,24 +77,24 @@ const TestimonialCards = () => {
 
                 <div className="flex gap-4 mt-4">
                   {item.linkedin && (
-                    <a
+                    <Link
                       href={item.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 text-sm font-medium hover:underline"
                     >
                       LinkedIn
-                    </a>
+                    </Link>
                   )}
                   {item.website && (
-                    <a
+                    <Link
                       href={item.website}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 text-sm font-medium hover:underline"
                     >
                       Website
-                    </a>
+                    </Link>
                   )}
                 </div>
               </div>

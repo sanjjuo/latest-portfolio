@@ -5,9 +5,9 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import { workSliderData } from "./data";
 import Link from "next/link";
+import { workSliderData } from "./data";
+import Image from "next/image";
 
 const WorkSlider = () => {
   return (
@@ -35,11 +35,14 @@ const WorkSlider = () => {
             >
               <Link
                 href={data.href}
-                className="relative w-40 h-16 hover:scale-105 duration-200 ease-in-out transition transform"
+                className="relative w-40 h-40 hover:scale-105 duration-200 ease-in-out transition transform"
               >
-                <img
+                <Image
                   src={data.image}
                   alt={data.label}
+                  fill
+                  priority
+                  quality={100}
                   className="object-contain rounded-lg w-full h-full"
                 />
               </Link>
