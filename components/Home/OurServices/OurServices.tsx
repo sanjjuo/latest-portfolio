@@ -20,14 +20,14 @@ const OurServices = () => {
         <div className="lg:col-span-3">
           {servicesData.map((item, index) => (
             <React.Fragment key={item.id}>
-              <div className="group relative overflow-hidden rounded-md w-full transition-all transform ease-in-out duration-700 h-20 lg:h-28 hover:h-32 lg:hover:h-40 cursor-pointer select-none">
+              <div className="group relative overflow-hidden rounded-none w-full transition-all transform ease-in-out duration-700 h-20 lg:h-28 hover:h-32 lg:hover:h-40 cursor-pointer select-none">
                 <Image
                   src={item.image}
                   alt={item.service}
                   fill
                   quality={100}
                   priority
-                  className="scale-0 group-hover:scale-100 w-full h-full object-cover rounded-md"
+                  className="scale-0 group-hover:scale-100 w-full h-full object-cover rounded-none"
                 />
 
                 <div className="bg-black/70 absolute inset-0 scale-0 group-hover:scale-100"></div>
