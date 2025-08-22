@@ -42,8 +42,4 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-
-  /* .mySwiper {
-    @apply max-w-80 w-full;
-  } */
 }
