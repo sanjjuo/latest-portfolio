@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
   return (
     <div className="relative flex flex-col items-center justify-center h-[calc(100vh-10rem)] lg:h-[calc(100vh-2rem)] overflow-hidden rounded-2xl">
-      <div className="mb-20 lg:m-0">
+      <div>
         <div className="flex items-end gap-5">
           <div className="hidden lg:block max-w-[150px] text-right">
             <SmallText text="I am Indian frontend developer based in Dubai, UAE" />
@@ -53,7 +53,7 @@ const Hero = () => {
         <div>
           <SocialMediaIcons placement="hero-section" />
         </div>
-        <div className="mb-5 lg:m-0">
+        <div className="hidden lg:block mb-5 lg:m-0">
           <Location />
         </div>
       </div>
