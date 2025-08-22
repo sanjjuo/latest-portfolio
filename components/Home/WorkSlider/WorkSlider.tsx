@@ -13,7 +13,7 @@ const WorkSlider = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center gap-5 app-padding overflow-hidden">
       <h1 className="text-2xl lg:text-base font-bold lg:font-medium font-heading">
-        I'm worked with
+        I&apos;m worked with
       </h1>
       <Carousel
         opts={{

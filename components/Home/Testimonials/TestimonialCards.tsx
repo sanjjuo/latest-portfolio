@@ -28,15 +28,17 @@ const TestimonialCards = () => {
           <Card className="p-10 w-auto relative overflow-hidden rounded-none">
             <CardContent>
               <div className="flex flex-col items-center">
-                <Image
-                  src={item.avatar}
-                  alt={item.client}
-                  width={1000}
-                  height={20}
-                  priority
-                  quality={100}
-                  className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md"
-                />
+                {item.avatar && (
+                  <Image
+                    src={item.avatar}
+                    alt={item.client}
+                    width={1000}
+                    height={20}
+                    priority
+                    quality={100}
+                    className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md"
+                  />
+                )}
                 <h1 className="text-3xl font-bold mt-5 font-heading">
                   {item.client}
                 </h1>

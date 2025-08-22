@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div className="app-padding">
       <div className="flex items-center justify-between">
-        <h1 className="heading-text">what's new</h1>
+        <h1 className="heading-text">what&apos;s new</h1>
         <AppButton name="explore more thoughts" href="" style="blog-btn" />
       </div>
       <Separator

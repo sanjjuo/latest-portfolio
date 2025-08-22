@@ -4,7 +4,7 @@ import { footerLinks } from "./data";
 
 const Footer = () => {
   return (
-    <div className="bg-app-projectBg rounded-2xl p-10">
+    <div className="bg-app-projectBg rounded-2xl p-5 lg:p-10">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
         <div className="col-span-2">
           <ConnectMe />
@@ -14,7 +14,7 @@ const Footer = () => {
         <Links data={footerLinks[2]} />
       </div>
       <div className="flex items-center justify-center py-10 lg:py-5">
-        <span className="name-title text-7xl lg:text-[350px] uppercase text-white">
+        <span className="name-title text-[80px] lg:text-[350px] uppercase text-white">
           mohamed sanjeed
         </span>
       </div>

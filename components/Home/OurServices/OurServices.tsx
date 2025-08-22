@@ -3,6 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import { servicesData } from "./data";
+import Image from "next/image";
 
 const OurServices = () => {
   return (
@@ -20,9 +21,12 @@ const OurServices = () => {
           {servicesData.map((item, index) => (
             <React.Fragment key={item.id}>
               <div className="group relative overflow-hidden rounded-md w-full transition-all transform ease-in-out duration-700 h-20 lg:h-28 hover:h-32 lg:hover:h-40 cursor-pointer select-none">
-                <img
+                <Image
                   src={item.image}
                   alt={item.service}
+                  fill
+                  quality={100}
+                  priority
                   className="scale-0 group-hover:scale-100 w-full h-full object-cover rounded-md"
                 />
 

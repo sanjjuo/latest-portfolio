@@ -27,7 +27,7 @@ const MobileSidebar = () => {
           <NavLinks />
           <div>
             <h1 className="uppercase font-extrabold text-xs">
-              let's create together
+              let&apos;s create together
             </h1>
             <Link href="mailto:sanjeedofficial22@gmail.com">
               <p className="text-2xl font-heading">

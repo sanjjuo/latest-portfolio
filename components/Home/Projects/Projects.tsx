@@ -4,6 +4,7 @@ import Link from "next/link";
 import { projectsData } from "./data";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from "next/image";
 
 const Projects = () => {
   useGSAP(() => {
@@ -14,7 +15,6 @@ const Projects = () => {
         end: "top 30%",
         scrub: true,
         pin: true,
-        markers: true,
       },
     });
   }, []);
@@ -53,9 +53,12 @@ const Projects = () => {
                 key={data.id}
                 className="relative lg:w-[760px] h-[570px] group overflow-hidden rounded-2xl"
               >
-                <img
+                <Image
                   src={data.image}
                   alt={data.title}
+                  fill
+                  priority
+                  quality={100}
                   className="object-cover rounded-2xl w-full h-full transition-all duration-300 ease-in-out group-hover:scale-105"
                 />
                 <div className="absolute -bottom-1/2 right-1/2 translate-x-1/2 rounded-full backdrop-blur-xl bg-white/10 w-8 h-8 group-hover:w-[1200px] group-hover:h-[1200px] transition-all duration-700 ease-in-out opacity-0 group-hover:opacity-90 flex items-center justify-center">

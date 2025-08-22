@@ -21,9 +21,8 @@ export const testimonialData = [
   },
   {
     id: 2,
-    client: "Antonella",
-    avatar:
-      "https://wwd.com/wp-content/uploads/2023/06/GettyImages-1471687861-e1686581007568.jpg?w=1000&h=550&crop=1",
+    client: "Abdallah Abdal Azeez",
+    avatar: "https://placehold.co/600x400",
     location: "Abu Dhabi, UAE",
     role: "UI/UX Designer",
     company: "CreativeFlow",
